@@ -4,9 +4,10 @@ body {
   vertical-align: top;
   font-size: 16px;
   color: #363945;
+  font-family: 'Lato', 'Roboto', sans-serif;
 }
 .navbar {
-  font-family: "Whitney A","Whitney B","Avenir",Helvetica,sans-serif;
+  font-family:  'Mukta Mahee', 'Lato', 'Roboto', sans-serif;
   text-align: center;
   z-index: 1;
   border-bottom: 1px solid #efefef;
@@ -198,10 +199,9 @@ body {
 
 
 .content {
-  font-family: "Walsheim", sans-serif;
+  font-family: 'Lato', 'Roboto', sans-serif;
   position: relative;
   top: 73px;
-  font-family: "Walsheim", sans-serif;
 }
 
 .content__video {
@@ -317,7 +317,7 @@ body {
   padding: 45px 58px 50px;
   display: flex;
   flex-flow: row wrap;
-  font-family: 'Walsheim' sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -426,6 +426,60 @@ body {
   max-width: 160px;
   color: #9CA8B7;
   font-weight: 600;
+}
+
+.content__posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1280px;
+  padding: 0 30px;
+  margin: 60px auto;
+}
+
+.content__posts-card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.content__posts-card__img {
+  padding: 0 15px;
+  flex: 1 1 250px;
+}
+
+.content__posts-card__img a {
+  display: block;
+}
+
+.content__posts-card__img a img {
+  max-width: 100%;
+}
+
+.content__posts-card__text {
+  padding: 0 15px;
+  flex: 2 1 350px;
+}
+
+.content__posts-card__title {
+  margin: 25px;
+  font-size: 1.17em;
+  line-height: 26px;
+  font-weight: 700;
+}
+.content__posts-card__descr {
+  font-size: 16px;
+  display: block;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.content__posts-card__link {
+  /* text-decoration: underline;
+  cursor: pointer; */
+  color: #217AD5;
 }
 
 @media only screen and (min-width: 1025px) {
