@@ -2,6 +2,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   vertical-align: top;
+  font-size: 16px;
+  color: #363945;
 }
 .navbar {
   font-family: "Whitney A","Whitney B","Avenir",Helvetica,sans-serif;
@@ -199,6 +201,7 @@ body {
   font-family: "Walsheim", sans-serif;
   position: relative;
   top: 73px;
+  font-family: "Walsheim", sans-serif;
 }
 
 .content__video {
@@ -250,6 +253,10 @@ body {
   display: block;
 }
 
+.content__video-videobox-wrapper p {
+  margin-bottom: -3px;
+}
+
 .content__video-button .button__watch-video {
   font-size: 20px;
   display: inline-block;
@@ -272,18 +279,154 @@ body {
   bottom: 5px;
 }
 
-.content__video-button .button__watch-video:hover:after {
-  background-color: #D6DADE;
+.content__video-button .button__watch-video:after {
+  background-color: #EFEFEF;
   content: "";
   width:100%;
   height: 100%;
   position: absolute;
-  bottom: -5px;
+  bottom: 0px;
   border-radius: 5px;
   left: 0;
   z-index: -1;
+  transition: all 0.05s ease-in-out;
 }
 
+
+.content__video-button .button__watch-video:hover:after {
+  background-color: #D6DADE;
+  bottom: -5px;
+}
+
+.content__features {
+  width: 100%;
+  background: linear-gradient(to right, #FED24A 50%, #3EA9F5 50%);
+  color: #363945;
+}
+
+.content__features-wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content__features-item {
+  flex: 1 1 300px;
+  padding: 45px 58px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Walsheim' sans-serif;
+}
+
+
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  background-color: rgb(232, 179, 203);
+}
+
+.content__features-item h2 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  margin: 15px 0 10px;
+  line-height: 30px;
+}
+
+.content__features-item__content {
+  font-size: 20px;
+  margin-bottom: 25px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.content__features-item__content a {
+  color: #363945;
+  text-decoration: underline;
+}
+.content__features-item__content a:hover {
+  text-decoration: none;
+}
+.feature-button {
+  font-size: 17px;
+  display: block;
+  padding: 17px 16px;
+  background-color: transparent;
+  color: #363945;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 180px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.05s ease-in-out;
+  box-sizing: border-box;
+}
+
+.feature-button:hover {
+  background-color: #fff;
+} 
+
+.bg-yellow {
+  background-color: #FED24A;
+}
+.bg-green {
+  background-color: #51C29F;
+}
+.bg-blue {
+  background-color: #3EA9F5;
+}
+
+.content__clients {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1280px;
+  margin: 60px auto;
+  background-color: #fff;
+}
+
+.content__clients-section {
+  flex: 1 0 400px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content__clients-item {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.content__clients-item img {
+  height: 110px;
+  width: auto;
+}
+
+.content__clients-item:last-child img {
+  height: 55px;
+  width: auto;
+}
+
+.content__clients-text p {
+  padding: 0 30px;
+  margin: 17px 0;
+  font-size: 17px;
+  max-width: 160px;
+  color: #9CA8B7;
+  font-weight: 600;
+}
 
 @media only screen and (min-width: 1025px) {
   .navbar__menu {
