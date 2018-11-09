@@ -49,15 +49,16 @@ body {
 .navbar__logo a {
   background-color: #fff;
   height: 116px;
-  line-height: 112px;
+  line-height: 116px;
   width: 60%;
   margin: 0 auto;
   max-width: 180px;
   border-bottom: none;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #363948;
-  font-size: 38px;
+  font-size: 44px;
   font-weight: 500;
   vertical-align: top;
 
@@ -89,19 +90,22 @@ body {
   color: #363948;
 }
 
-.navbar__menu-item.active .navbar__menu-item__title:before {
+.navbar__menu-item__title:before {
   position: absolute;
   background: #f9f9f9;
   border: 1px solid #efefef;
   border-radius: 5px;
   bottom: -14px;
   content: "";
-  display: block;
+  display: none;
   height: 20px;
   width: 20px;
   left: 50%;
   transform-origin: center;
   transform: translate(-50%, 0) rotateX(20deg) rotateZ(45deg);
+}
+.navbar__menu-item.active .navbar__menu-item__title:before {
+  display: block;
 }
 
 .navbar__menu-item ul {
@@ -226,7 +230,7 @@ body {
 .content__video-header {
   flex: 1 1 500px;
   max-width: 500px;
-  padding: 40px 30px 0;
+  padding: 3em 0.6em;
 }
 
 .content__video h1 {
@@ -255,12 +259,13 @@ body {
 
 .content__video-videobox-wrapper p {
   margin-bottom: -3px;
+  margin-top: 0;
 }
 
 .content__video-button .button__watch-video {
   font-size: 20px;
   display: inline-block;
-  padding: 25px 50px;
+  padding: 22px 50px;
   background-color: #fff;
   color: #363945;
   text-decoration: none;
@@ -477,9 +482,110 @@ body {
   margin-bottom: 30px;
 }
 .content__posts-card__link {
-  /* text-decoration: underline;
-  cursor: pointer; */
   color: #217AD5;
+}
+
+.content__updates {
+  color: #777777;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #e8e7e6;
+  padding: 25px;
+  display: block;
+}
+
+.content__updates a {
+  color: #777777;
+}
+
+.footer {
+  background-color: #2A2D35;
+  text-align: center;
+  position: relative;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 50px 60px 25px;
+}
+
+.footer .sections {
+  margin: 0 2em;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer .sections li {
+  flex: 1;
+  text-align: left;
+  padding-right: 16px;
+}
+
+.footer .sections ul {
+  list-style-type: none;
+  color: #fff;
+  padding-left: 0;
+}
+
+.footer .sections li h3 {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.footer .sections li ul li {
+  line-height: 22px;
+  margin: 6px 0;
+}
+
+.footer .sections li a {
+  text-decoration: none;
+  color: #b2b9c1;
+  font-size: 15px;
+}
+
+.footer .sections .info {
+  color: #fff;
+  flex: 3;
+}
+
+.footer .sections .info .logo {
+  width: 40px;
+}
+.footer .sections .title {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 500;
+  padding-right: 30%;
+}
+
+.footer .sections .socials {
+  font-size: 17px;
+  color: #3ea9f5;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.footer .sections .socials span {
+  color: #fff;
+}
+
+.footer .sections .social-link {
+  color: #3ea9f5;
+  font-size: 16px;
+}
+
+.copyright {
+  margin-top: 3em;
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  border-top: 1px solid #efefef;
+  padding: 3em 0;
+  color: #b2b9c1;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -559,6 +665,10 @@ body {
   .content {
     top: 0;
   }
+
+  .content__video-header {
+    padding: 3em 2em 0;
+  }
 }
 
 
@@ -628,3 +738,41 @@ body {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .footer__container .sections {
+    display: block;
+  }
+
+  .footer .sections .info * {
+    line-height: 32px;
+  }
+
+  .footer .sections .title {
+    padding-right: 0; 
+    line-height: 1.3;
+    font-size: 28px;
+    margin : 1em 0;
+  }
+
+  .footer__container .sections li {
+    text-align: center;
+    padding-right: 0;
+    margin: 0 auto 40px;
+  }
+
+  .footer__container .sections li h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .footer .sections .socials {
+    padding: 1em 0;
+  }
+  .footer .sections .socials * {
+    line-height: 32px;
+  }
+  .footer .sections .socials span {
+    display: block;
+    font-size: 22px;
+  }
+}
