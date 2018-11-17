@@ -90,20 +90,6 @@ body {
   color: #363948;
 }
 
-/* .navbar__menu-item__title:before {
-  position: absolute;
-  background: #f9f9f9;
-  border: 1px solid #efefef;
-  border-radius: 5px;
-  bottom: -14px;
-  content: "";
-  display: none;
-  height: 20px;
-  width: 20px;
-  left: 50%;
-  transform-origin: center;
-  transform: translate(-50%, 0) rotateX(20deg) rotateZ(45deg);
-} */
 .navbar__menu-item__title:before {
   position: absolute;
   border: 15px solid transparent;
@@ -232,6 +218,12 @@ body {
   color: #3ea9f5;
 }
 
+.navbar__auth-btns .auth-icon {
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 112px;
+}
 
 .content {
   font-family: 'Lato', 'Roboto', sans-serif;
@@ -668,6 +660,13 @@ body {
   
   .navbar__auth-btns {
     border-left: none;
+  }
+
+  .navbar__auth-btns .auth-icon {
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 58px;
   }
 
   .navbar__auth-btns-signup {
